@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfect Digital Society API Documentation</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+        }
+        .endpoints {
+            text-align: left;
+            margin: 30px 0;
+        }
+        .endpoint {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        .method {
+            font-weight: bold;
+            color: #28a745;
+            margin-right: 10px;
+        }
+        .path {
+            font-family: 'Courier New', monospace;
+            background: #e9ecef;
+            padding: 2px 6px;
+            border-radius: 3px;
+        }
+        .description {
+            color: #666;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+        .status {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Perfect Digital Society API</h1>
+        <p class="subtitle">API Documentation & Test Interface</p>
+
+        <div class="status">
+            ✅ API is running successfully on Spring Boot 4.0.0
+        </div>
+
+        <div class="endpoints">
+            <h3>Available Endpoints:</h3>
+
+            <div class="endpoint">
+                <div>
+                    <span class="method">GET</span>
+                    <span class="path">/api/health</span>
+                </div>
+                <div class="description">Health check endpoint - Test API availability</div>
+            </div>
+
+            <div class="endpoint">
+                <div>
+                    <span class="method">GET</span>
+                    <span class="path">/api/health/version</span>
+                </div>
+                <div class="description">Get API version information</div>
+            </div>
+
+            <div class="endpoint">
+                <div>
+                    <span class="method">GET</span>
+                    <span class="path">/api/balance/current</span>
+                </div>
+                <div class="description">Get current system balance scores</div>
+            </div>
+
+            <div class="endpoint">
+                <div>
+                    <span class="method">GET</span>
+                    <span class="path">/api/community/rules</span>
+                </div>
+                <div class="description">Get active community rules</div>
+            </div>
+
+            <div class="endpoint">
+                <div>
+                    <span class="method">GET</span>
+                    <span class="path">/api/community/metrics</span>
+                </div>
+                <div class="description">Get community health metrics</div>
+            </div>
+        </div>
+
+        <p><strong>Base URL:</strong> <code>http://localhost:8080</code></p>
+        <p><strong>Authentication:</strong> JWT Bearer Token (for protected endpoints)</p>
+
+        <div style="margin-top: 30px; color: #666; font-size: 12px;">
+            Perfect Digital Society - A platform that dynamically balances freedom and security
+        </div>
+    </div>
+</body>
+</html>
+
