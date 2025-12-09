@@ -108,7 +108,7 @@
   color: var(--cyber-success);
 }
 
-. icon-btn {
+.icon-btn {
   position: relative;
   display: flex;
   align-items: center;
@@ -130,7 +130,7 @@
   box-shadow: var(--shadow-glow);
 }
 
-. notification-badge {
+.notification-badge {
   position: absolute;
   top: -5px;
   right: -5px;
