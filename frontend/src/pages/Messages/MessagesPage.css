@@ -1,0 +1,223 @@
+.messages-page {
+  animation: fadeIn 0.5s ease;
+}
+
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-xl);
+  flex-wrap: wrap;
+  gap: var(--spacing-md);
+}
+
+.header-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+}
+
+.filter-select {
+  padding: 0.75rem 1rem;
+  font-family: var(--font-secondary);
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  background: var(--bg-secondary);
+  border: 2px solid var(--border-color);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.filter-select:focus {
+  border-color: var(--cyber-primary);
+  box-shadow: var(--shadow-glow);
+  outline: none;
+}
+
+/* Message Composer */
+.message-composer {
+  margin-bottom: var(--spacing-xl);
+}
+
+.form-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-md);
+}
+
+/* Messages List */
+.messages-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.message-card {
+  transition: all var(--transition-normal);
+}
+
+.message-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--spacing-md);
+  padding-bottom: var(--spacing-sm);
+  border-bottom: 2px solid var(--border-color);
+}
+
+.message-author {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.message-actions {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.icon-btn.danger {
+  color: var(--cyber-danger);
+}
+
+.icon-btn.danger:hover {
+  border-color: var(--cyber-danger);
+  box-shadow: 0 0 20px rgba(255, 0, 85, 0.3);
+}
+
+.message-body {
+  margin-bottom: var(--spacing-md);
+}
+
+.message-content {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.message-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.edit-actions {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.btn-sm {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+}
+
+.btn-success {
+  background: var(--cyber-success);
+  color: var(--bg-primary);
+  border-color: var(--cyber-success);
+}
+
+.btn-success:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.5);
+}
+
+.message-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.message-badges {
+  display: flex;
+  gap: var(--spacing-xs);
+  flex-wrap: wrap;
+}
+
+.message-impact {
+  display: flex;
+  gap: var(--spacing-xs);
+}
+
+.impact-badge {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+}
+
+.impact-badge.freedom {
+  background: rgba(0, 255, 255, 0.1);
+  color: var(--cyber-primary);
+  border: 1px solid var(--cyber-primary);
+}
+
+.impact-badge.security {
+  background: rgba(255, 0, 255, 0.1);
+  color: var(--cyber-secondary);
+  border: 1px solid var(--cyber-secondary);
+}
+
+/* Empty State */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-xl) var(--spacing-md);
+  text-align: center;
+  color: var(--text-muted);
+  min-height: 400px;
+}
+
+.empty-state svg {
+  color: var(--cyber-primary);
+  margin-bottom: var(--spacing-md);
+  opacity: 0.5;
+}
+
+.empty-state h3 {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.empty-state p {
+  margin-bottom: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+  .page-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-actions {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .filter-select,
+  .header-actions .btn {
+    width: 100%;
+  }
+
+  .message-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+  }
+
+  .message-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .message-footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

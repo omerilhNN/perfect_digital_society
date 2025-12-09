@@ -28,7 +28,7 @@ A modern, cyber-themed React application built with Vite for managing digital so
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/perfect-digital-society-frontend.git
+   git clone https://github.com/omerilhNN/perfect_digital_society.git
    cd perfect-digital-society-frontend
    ```
 

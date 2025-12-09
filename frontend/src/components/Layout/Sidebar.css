@@ -15,7 +15,7 @@
   width: 280px;
 }
 
-.sidebar. closed {
+.sidebar.closed {
   width: 80px;
 }
 
@@ -112,7 +112,7 @@
   white-space: nowrap;
 }
 
-.sidebar. closed .nav-label {
+.sidebar.closed .nav-label {
   display: none;
 }
 
