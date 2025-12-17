@@ -38,7 +38,7 @@ apiClient.interceptors.response.use(
         window.location.href = '/login';
         toast.error('Session expired. Please login again.');
       } else if (status === 403) {
-        toast.error('Access denied.  Insufficient privileges.');
+        toast.error('Access denied. Insufficient privileges.');
       } else if (status === 404) {
         toast.error('Resource not found.');
       } else if (status >= 500) {
@@ -61,7 +61,7 @@ apiClient.interceptors.response.use(
 export const authService = {
   login: async (username, password) => {
     const response = await apiClient.post('/users/login', { username, password });
-    return response.data. data;
+    return response.data.data;
   },
 
   register: async (userData) => {
@@ -112,17 +112,17 @@ export const userService = {
 export const messageService = {
   getAllMessages: async () => {
     const response = await apiClient.get('/messages');
-    return response. data;
+    return response.data;
   },
 
   getMyMessages: async () => {
     const response = await apiClient.get('/messages/my-messages');
-    return response. data;
+    return response.data;
   },
 
   getUserMessages: async (userId) => {
     const response = await apiClient.get(`/messages/user/${userId}`);
-    return response. data;
+    return response.data;
   },
 
   getMessageById: async (messageId) => {
@@ -156,7 +156,7 @@ export const messageService = {
   },
 
   getPendingMessages: async () => {
-    const response = await apiClient. get('/messages/pending');
+    const response = await apiClient.get('/messages/pending');
     return response.data;
   },
 };
@@ -183,11 +183,11 @@ export const balanceService = {
 
   getBalanceStatistics: async () => {
     const response = await apiClient.get('/balance/statistics');
-    return response.data. data;
+    return response.data.data;
   },
 
   getUserBalance: async (userId) => {
-    const response = await apiClient. get(`/balance/user/${userId}`);
+    const response = await apiClient.get(`/balance/user/${userId}`);
     return response.data.data;
   },
 
@@ -203,7 +203,7 @@ export const balanceService = {
 
   triggerRebalance: async () => {
     const response = await apiClient.post('/balance/rebalance');
-    return response. data;
+    return response.data;
   },
 };
 
@@ -213,8 +213,8 @@ export const balanceService = {
 
 export const communityService = {
   getRules: async (params = {}) => {
-    const queryString = new URLSearchParams(params). toString();
-    const response = await apiClient.get(`/community/rules${queryString ?  '?' + queryString : ''}`);
+    const queryString = new URLSearchParams(params).toString();
+    const response = await apiClient.get(`/community/rules${queryString ? '?' + queryString : ''}`);
     return response.data;
   },
 
@@ -224,12 +224,12 @@ export const communityService = {
   },
 
   getRulesByType: async (type) => {
-    const response = await apiClient. get(`/community/rules/type/${type}`);
+    const response = await apiClient.get(`/community/rules/type/${type}`);
     return response.data;
   },
 
   getTopVotedRules: async (limit = 10) => {
-    const response = await apiClient. get(`/community/rules/top-voted? limit=${limit}`);
+    const response = await apiClient.get(`/community/rules/top-voted?limit=${limit}`);
     return response.data;
   },
 
@@ -248,17 +248,17 @@ export const communityService = {
       ruleId, 
       vote 
     });
-    return response. data;
+    return response.data;
   },
 
   getMetrics: async () => {
     const response = await apiClient.get('/community/metrics');
-    return response.data. data;
+    return response.data.data;
   },
 
   getMyRules: async () => {
     const response = await apiClient.get('/community/my-rules');
-    return response. data;
+    return response.data;
   },
 
   getHealthReport: async () => {
@@ -268,7 +268,7 @@ export const communityService = {
 
   evaluateRules: async () => {
     const response = await apiClient.post('/community/evaluate-rules');
-    return response. data;
+    return response.data;
   },
 };
 
@@ -290,28 +290,28 @@ export const adminService = {
 
   searchUsers: async (searchParams) => {
     const queryString = new URLSearchParams(searchParams).toString();
-    const response = await apiClient.get(`/admin/users/search? ${queryString}`);
+    const response = await apiClient.get(`/admin/users/search?${queryString}`);
     return response.data;
   },
 
   getSuspiciousUsers: async () => {
     const response = await apiClient.get('/admin/users/suspicious');
-    return response. data;
+    return response.data;
   },
 
   updateUserStatus: async (userId, statusData) => {
     const response = await apiClient.put(`/admin/users/${userId}/status`, statusData);
-    return response. data;
+    return response.data;
   },
 
   getSystemMetrics: async () => {
     const response = await apiClient.get('/admin/system/metrics');
-    return response.data. data;
+    return response.data.data;
   },
 
   getDashboard: async () => {
-    const response = await apiClient. get('/admin/dashboard');
-    return response.data. data;
+    const response = await apiClient.get('/admin/dashboard');
+    return response.data.data;
   },
 
   adjustBalance: async (adjustmentData) => {
@@ -333,12 +333,12 @@ export const adminService = {
 
   generateReport: async () => {
     const response = await apiClient.get('/admin/system/report');
-    return response. data;
+    return response.data;
   },
 
   performMaintenance: async () => {
     const response = await apiClient.post('/admin/system/maintenance');
-    return response. data;
+    return response.data;
   },
 };
 
@@ -349,7 +349,7 @@ export const adminService = {
 export const healthService = {
   checkHealth: async () => {
     const response = await apiClient.get('/health');
-    return response. data;
+    return response.data;
   },
 
   getVersion: async () => {
