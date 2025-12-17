@@ -14,7 +14,7 @@
   min-height: 400px;
 }
 
-.system-balance . card-header {
+.system-balance .card-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -62,7 +62,7 @@
   border-left: 4px solid var(--cyber-primary);
 }
 
-. balance-metric.security {
+.balance-metric.security {
   border-left: 4px solid var(--cyber-secondary);
 }
 
@@ -70,7 +70,7 @@
   border-left: 4px solid var(--cyber-accent);
 }
 
-. balance-metric . metric-label {
+.balance-metric .metric-label {
   display: block;
   font-size: 0.85rem;
   color: var(--text-muted);
@@ -86,7 +86,7 @@
   margin: 0 0 var(--spacing-sm) 0;
 }
 
-.balance-metric. freedom .metric-value {
+.balance-metric.freedom .metric-value {
   color: var(--cyber-primary);
 }
 
@@ -153,13 +153,13 @@
   margin-bottom: var(--spacing-xs);
 }
 
-. stat-item .stat-value {
+.stat-item .stat-value {
   font-family: var(--font-primary);
   font-size: 1.75rem;
   font-weight: 700;
 }
 
-.stat-value. freedom {
+.stat-value.freedom {
   color: var(--cyber-primary);
 }
 
@@ -182,7 +182,7 @@
   gap: var(--spacing-md);
 }
 
-. event-item {
+.event-item {
   display: flex;
   gap: var(--spacing-md);
   padding: var(--spacing-md);
@@ -275,7 +275,7 @@
 }
 
 @media (max-width: 768px) {
-  . user-balance-stats {
+  .user-balance-stats {
     grid-template-columns: 1fr;
   }
 
