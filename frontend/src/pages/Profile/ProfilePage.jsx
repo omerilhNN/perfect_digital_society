@@ -338,7 +338,7 @@ const ProfilePage = () => {
               🎯 Strive for balance to maximize your influence in the community. 
             </p>
           </div>
-        </motion. div>
+        </motion.div>
       </div>
     </div>
   );
