@@ -60,7 +60,7 @@ const AdminPage = () => {
   const handleUpdateUserStatus = async (userId, status, reason) => {
     try {
       await adminService.updateUserStatus(userId, { status, reason });
-      toast. success('User status updated successfully! ');
+      toast.success('User status updated successfully! ');
       loadAdminData();
     } catch (error) {
       console.error('Failed to update user status:', error);
