@@ -132,7 +132,7 @@ const CommunityPage = () => {
 
   return (
     <div className="community-page">
-      <motion. div 
+      <motion.div 
         className="page-header"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}

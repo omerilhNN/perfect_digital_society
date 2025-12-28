@@ -135,7 +135,7 @@ const LoginPage = () => {
             ⚖️ Freedom & Security in Perfect Balance
           </p>
         </div>
-      </motion. div>
+      </motion.div>
     </div>
   );
 };
