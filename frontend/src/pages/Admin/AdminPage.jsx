@@ -88,9 +88,9 @@ const AdminPage = () => {
       const report = await adminService.generateReport();
       const blob = new Blob([report], { type: 'text/plain' });
       const url = window.URL.createObjectURL(blob);
-      const a = document. createElement('a');
-      a. href = url;
-      a. download = `system-report-${new Date().toISOString()}.txt`;
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = `system-report-${new Date().toISOString()}.txt`;
       a.click();
       toast.success('Report downloaded successfully!');
     } catch (error) {
@@ -99,7 +99,7 @@ const AdminPage = () => {
     }
   };
 
-  const filteredUsers = adminData.users. filter(u => 
+  const filteredUsers = adminData.users.filter(u => 
     u.username?.toLowerCase().includes(searchTerm.toLowerCase()) ||
     u.email?.toLowerCase().includes(searchTerm.toLowerCase())
   );
