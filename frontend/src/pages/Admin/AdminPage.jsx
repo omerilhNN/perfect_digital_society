@@ -388,7 +388,7 @@ const AdminPage = () => {
               </div>
             )}
           </div>
-        </motion. div>
+        </motion.div>
       )}
 
       {/* Audit Logs Tab */}
