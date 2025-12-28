@@ -254,7 +254,7 @@ const AdminPage = () => {
 
       {/* Users Tab */}
       {activeTab === 'users' && (
-        <motion. div
+        <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
         >
