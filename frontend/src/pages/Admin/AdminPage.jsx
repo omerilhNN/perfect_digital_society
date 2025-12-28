@@ -240,7 +240,7 @@ const AdminPage = () => {
                   <div className="level-bar">
                     <div 
                       className="level-fill security"
-                      style={{ width: `${metrics. systemSecurityLevel || 0}%` }}
+                      style={{ width: `${metrics.systemSecurityLevel || 0}%` }}
                     >
                       {metrics.systemSecurityLevel}
                     </div>
@@ -354,7 +354,7 @@ const AdminPage = () => {
                 <FiAlertTriangle /> Suspicious Users ({adminData.suspiciousUsers.length})
               </h3>
             </div>
-            {adminData.suspiciousUsers. length > 0 ? (
+            {adminData.suspiciousUsers.length > 0 ? (
               <div className="suspicious-list">
                 {adminData.suspiciousUsers.map(user => (
                   <div key={user.id} className="suspicious-item">
